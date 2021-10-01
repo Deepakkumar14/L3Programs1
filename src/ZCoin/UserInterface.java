@@ -39,7 +39,7 @@ public class UserInterface {
                 System.out.println("Enter Password");
                 System.out.println("Password must contain 8 characters.Must use number and special Character");
                 String password = input.nextLine();
-                while (logic.passwordValidator(password) != "true") {
+                while (!logic.passwordValidator(password).equals("true")) {
                     System.out.println("Enter password again.Password must contain 8 characters.Must use number and special Character");
                     System.out.println("Enter the new password");
                     password = input.nextLine();
